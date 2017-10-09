@@ -507,7 +507,7 @@ class DataRowsTableSeeder extends Seeder
                 'edit'         => 1,
                 'add'          => 1,
                 'delete'       => 1,
-                'details'      => '',
+                'details'      => '{"validation":{"rule":"email|unique:users", "messages":{"unique":"Email is existed in database", "email":"This is not email, please choose right email"}}}',
                 'order'        => 3,
             ])->save();
         }
